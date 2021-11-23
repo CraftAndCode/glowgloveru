@@ -1,31 +1,55 @@
+### @autoOpen = true
+#### 1. Подключите ваш Micro:bit с помощью кабеля USB.
+#### 2. Синхронизируйте Micro:bit, нажав кнопку `||led....||` - `||led.Подключить устройство||`.
+#### 3. Загрузите программу световой перчатки, нажав `||led.Скачать||`.
+#### 4. Узнайте больше о программировании, запустив интерактивные уроки.
 
-> Open this page at [https://craftandcode.github.io/glowgloveru/](https://craftandcode.github.io/glowgloveru/)
+## Учимся программировать
 
-## Использовать это расширение
+```codecard
+[
+{
+    "name": "Расширение Neopixel",
+    "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
+    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/conditions-and-statements/ru", 
+    "description": "Научимся управлять цветной светодиодной лентой", 
+    "cardType": "tutorial",
+    "label": "Advanced",
+    "labelClass": "orange ribbon small"
+},
+{
+    "name": "Другие полезные расширения",
+    "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
+    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/advanced-sensors/ru", 
+    "description": "Научим Micro:bit считывать данные с датчиков", 
+    "cardType": "tutorial",
+    "label": "Advanced",
+    "labelClass": "orange ribbon small"
+},
+{
+    "name": "Циклы",
+    "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
+    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/logical-operations/ru", 
+    "description": "Научим Micro:bit понимать слова И, ИЛИ и НЕ", 
+    "cardType": "tutorial",
+    "label": "Advanced",
+    "labelClass": "orange ribbon small"
+}
+]
+```
 
-This repository can be added as an **extension** in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/craftandcode/glowgloveru** and import
-
-## Править этот проект ![Build status badge](https://github.com/craftandcode/glowgloveru/workflows/MakeCode/badge.svg)
-
-To edit this repository in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/craftandcode/glowgloveru** and click import
-
-## Blocks preview
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/craftandcode/glowgloveru/raw/master/.github/makecode/blocks.png)
-
-#### Metadata (used for search, rendering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+## Электронный футбол
+Инструкции по изменению программы электронного футбола
+```codecard
+[
+{
+    "name": "Меняем правила!",
+    "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
+    "url": "https://makecode.microbit.org/#tutorial:44093-35336-48736-30388", 
+    "description": "Задаём имена игроков, время матча и фору", 
+    "cardType": "tutorial",
+    "label": "Easy",
+    "labelClass": "green ribbon small"
+}
+]
+```
