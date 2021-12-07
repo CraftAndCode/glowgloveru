@@ -11,7 +11,7 @@
 {
     "name": "Расширение Neopixel: Часть 1",
     "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
-    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/neopixel-extension", 
+    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/neopixel-part-1/ru", 
     "description": "Научимся управлять цветной светодиодной лентой", 
     "cardType": "tutorial",
     "label": "Advanced",
@@ -20,7 +20,7 @@
 {
     "name": "Расширение Neopixel: Часть 2",
     "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
-    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/neopixel-extension-2/ru", 
+    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/neopixel-part-2/ru", 
     "description": "Научимся управлять цветной светодиодной лентой", 
     "cardType": "tutorial",
     "label": "Advanced",
