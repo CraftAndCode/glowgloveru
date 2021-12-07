@@ -9,19 +9,19 @@
 ```codecard
 [
 {
-    "name": "Расширение Neopixel",
+    "name": "Расширение Neopixel: Часть 1",
     "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
-    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/conditions-and-statements/ru", 
+    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/neopixel-extension/ru", 
     "description": "Научимся управлять цветной светодиодной лентой", 
     "cardType": "tutorial",
     "label": "Advanced",
     "labelClass": "orange ribbon small"
 },
 {
-    "name": "Другие полезные расширения",
+    "name": "Расширение Neopixel: Часть 2",
     "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
-    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/advanced-sensors/ru", 
-    "description": "Научим Micro:bit считывать данные с датчиков", 
+    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/neopixel-extension-2/ru", 
+    "description": "Научимся управлять цветной светодиодной лентой", 
     "cardType": "tutorial",
     "label": "Advanced",
     "labelClass": "orange ribbon small"
@@ -38,15 +38,15 @@
 ]
 ```
 
-## Электронный футбол
-Инструкции по изменению программы электронного футбола
+## Световая перчатка
+Инструкции по изменению программы световой перчатки
 ```codecard
 [
 {
-    "name": "Меняем правила!",
+    "name": "Как выглядит твоя суперсила?",
     "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
     "url": "https://makecode.microbit.org/#tutorial:44093-35336-48736-30388", 
-    "description": "Задаём имена игроков, время матча и фору", 
+    "description": "Меняем световые режимы", 
     "cardType": "tutorial",
     "label": "Easy",
     "labelClass": "green ribbon small"
