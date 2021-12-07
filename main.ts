@@ -1,4 +1,4 @@
-function Random() {
+function Random () {
     music.ringTone(randint(131, 988))
     strip.setBrightness(255)
     strip.setPixelColor(randint(0, 9), neopixel.rgb(randint(0, 128), randint(0, 128), randint(0, 128)))
@@ -7,7 +7,7 @@ function Random() {
     music.stopAllSounds()
     basic.pause(150 - Math.map(Math.abs(input.rotation(Rotation.Pitch)), 0, 90, 0, 100))
 }
-function ScreenUpdate() {
+function ScreenUpdate () {
     if (GloveMode == 1) {
         basic.showLeds(`
             . . . . .
@@ -62,7 +62,7 @@ input.onButtonPressed(Button.A, function () {
     music.playTone(262, music.beat(BeatFraction.Quarter))
     ScreenUpdate()
 })
-function ClawGlow() {
+function ClawGlow () {
     for (let index = 0; index <= 63; index++) {
         if (input.buttonIsPressed(Button.B) || IsShaking) {
             return
@@ -70,58 +70,58 @@ function ClawGlow() {
         pins.analogWritePin(AnalogPin.P2, index * 16)
         basic.pause(11 - Math.map(Math.abs(input.rotation(Rotation.Pitch)), 0, 90, 0, 10))
     }
-    for (let index = 0; index <= 63; index++) {
+    for (let index2 = 0; index2 <= 63; index2++) {
         if (input.buttonIsPressed(Button.B) || IsShaking) {
             return
         }
-        pins.analogWritePin(AnalogPin.P2, 1024 - index * 16)
+        pins.analogWritePin(AnalogPin.P2, 1024 - index2 * 16)
         basic.pause(11 - Math.map(Math.abs(input.rotation(Rotation.Pitch)), 0, 90, 0, 10))
     }
 }
-function ColorFade(Color: number) {
-    for (let index = 0; index <= 63; index++) {
+function ColorFade (Color: number) {
+    for (let index3 = 0; index3 <= 63; index3++) {
         music.ringTone(262 + Math.map(Math.abs(input.rotation(Rotation.Pitch)), 0, 90, 0, 200))
-        music.setVolume(Mute * (index * 4))
+        music.setVolume(Mute * (index3 * 4))
         if (input.buttonIsPressed(Button.A) || IsShaking) {
             return
         }
-        strip.setBrightness(index)
+        strip.setBrightness(index3)
         strip.showColor(Color)
         strip.show()
         basic.pause(10 - Math.map(Math.abs(input.rotation(Rotation.Pitch)), 0, 90, 0, 10))
     }
-    for (let index = 0; index <= 63; index++) {
+    for (let index4 = 0; index4 <= 63; index4++) {
         music.ringTone(262 + Math.map(Math.abs(input.rotation(Rotation.Pitch)), 0, 90, 0, 200))
-        music.setVolume(Mute * (128 - index * 4))
+        music.setVolume(Mute * (128 - index4 * 4))
         if (input.buttonIsPressed(Button.A) || IsShaking) {
             return
         }
-        strip.setBrightness(63 - index)
+        strip.setBrightness(63 - index4)
         strip.showColor(Color)
         strip.show()
         basic.pause(10 - Math.map(Math.abs(input.rotation(Rotation.Pitch)), 0, 90, 0, 10))
     }
 }
-function ClawBlink() {
+function ClawBlink () {
     pins.digitalWritePin(DigitalPin.P2, 0)
     basic.pause(500 - Math.map(Math.abs(input.rotation(Rotation.Pitch)), 0, 90, 0, 170))
     pins.digitalWritePin(DigitalPin.P2, 1)
     basic.pause(500 - Math.map(Math.abs(input.rotation(Rotation.Pitch)), 0, 90, 0, 170))
 }
-function TwoColors(Color1: number, Color2: number) {
-    for (let index = 0; index <= 5; index++) {
+function TwoColors (Color1: number, Color2: number) {
+    for (let index5 = 0; index5 <= 5; index5++) {
         music.ringTone(196)
-        strip.setPixelColor(index * 2, Color1)
-        strip.setPixelColor(index * 2 + 1, Color2)
+        strip.setPixelColor(index5 * 2, Color1)
+        strip.setPixelColor(index5 * 2 + 1, Color2)
         strip.show()
     }
     basic.pause(300 - Math.map(Math.abs(input.rotation(Rotation.Pitch)), 0, 90, 0, 150))
     music.stopAllSounds()
     basic.pause(300 - Math.map(Math.abs(input.rotation(Rotation.Pitch)), 0, 90, 0, 150))
-    for (let index = 0; index <= 5; index++) {
+    for (let index6 = 0; index6 <= 5; index6++) {
         music.ringTone(131)
-        strip.setPixelColor(index * 2, Color2)
-        strip.setPixelColor(index * 2 + 1, Color1)
+        strip.setPixelColor(index6 * 2, Color2)
+        strip.setPixelColor(index6 * 2 + 1, Color1)
         strip.show()
     }
     basic.pause(300 - Math.map(Math.abs(input.rotation(Rotation.Pitch)), 0, 90, 0, 150))
@@ -144,11 +144,11 @@ input.onButtonPressed(Button.B, function () {
     }
     music.playTone(392, music.beat(BeatFraction.Quarter))
 })
-function Custom() {
+function Custom () {
     strip.clear()
     strip.show()
 }
-function Rainbow() {
+function Rainbow () {
     if (!(MusicPlaying)) {
         MusicPlaying = true
         music.startMelody(music.builtInMelody(Melodies.Nyan), MelodyOptions.Forever)
@@ -168,17 +168,17 @@ input.onGesture(Gesture.Shake, function () {
     music.stopAllSounds()
     music.setVolume(Mute * 255)
     IsShaking = true
-    for (let index = 0; index <= 10; index++) {
+    for (let index7 = 0; index7 <= 10; index7++) {
         strip.showColor(neopixel.colors(NeoPixelColors.Red))
         pins.digitalWritePin(DigitalPin.P2, 1)
         music.playTone(988, music.beat(BeatFraction.Sixteenth))
         music.playTone(784, music.beat(BeatFraction.Sixteenth))
-        basic.pause(100 - index * 10)
+        basic.pause(100 - index7 * 10)
         strip.showColor(neopixel.colors(NeoPixelColors.Black))
         music.playTone(880, music.beat(BeatFraction.Sixteenth))
         music.playTone(698, music.beat(BeatFraction.Sixteenth))
         pins.digitalWritePin(DigitalPin.P2, 0)
-        basic.pause(100 - index * 10)
+        basic.pause(100 - index7 * 10)
     }
     music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)
     basic.pause(750)
