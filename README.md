@@ -27,10 +27,10 @@
     "labelClass": "orange ribbon small"
 },
 {
-    "name": "Циклы",
+    "name": "Повторяющий цикл",
     "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
-    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/logical-operations/ru", 
-    "description": "Научим Micro:bit понимать слова И, ИЛИ и НЕ", 
+    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/repeat-cycle/ru", 
+    "description": "Научим Micro:bit повторять части программы", 
     "cardType": "tutorial",
     "label": "Advanced",
     "labelClass": "orange ribbon small"
